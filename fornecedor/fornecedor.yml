@@ -1,4 +1,8 @@
 spring:
-  data:
-    mongodb:
-      uri: mongodb://localhost:28017/fornecedor
+  datasource:
+    password: root
+    username: root
+    url: 'jdbc:mysql://localhost:3306/fornecedor'
+  jpa:
+    hibernate:
+      ddl-auto: update
