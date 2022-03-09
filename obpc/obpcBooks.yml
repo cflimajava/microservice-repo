@@ -1,40 +1,4 @@
-sbase:
-  activation:
-    uri: http://192.168.1.6:8587/obpc/user/activation/
-info:
-  app:
-    description: '@project.description@'
-    encoding: '@project.build.sourceEncoding@'
-    java:
-      version: '@java.version@'
-    name: '@project.name@'
-    version: '@project.version@'
-management:
-  endpoint:
-    health:
-      show-details: always
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-obpc:
-  jwt:
-    expiration: 8400000
-    secret: '"criarAlgumaStringImpossivelDeQuebrar"'
-sender:
-  email: cristianolimaudi@gmail.com
-  pass: Emilly@2019
-server:
-  port: ${port:8587}
-  servlet:
-    context-path: /obpc
-    encoding:
-      charset: UTF-8
-  ssl:
-    enabled: false
 spring:
   data:
     mongodb:
       uri: mongodb://localhost:28017/obpc_udi
-swagger:
-  enabled: true
