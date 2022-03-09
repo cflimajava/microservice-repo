@@ -1,4 +1,4 @@
 spring:
   data:
   mongodb:
-    uri=mongodb://localhost:28017/obpc_udi
+    uri: mongodb://localhost:28017/obpc_udi
